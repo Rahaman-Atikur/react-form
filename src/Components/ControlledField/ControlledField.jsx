@@ -5,6 +5,7 @@ const ControlledField = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // console.log("Form Submitted");
+        setPassword(e.target.value);
         if (password.length < 6) {
             setError("Password should be 6 Character");
         }
