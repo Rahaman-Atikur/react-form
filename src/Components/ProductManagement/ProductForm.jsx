@@ -1,19 +1,39 @@
-import React from 'react';
-
-const ProductForm = () => {
+import React, { useState } from 'react';
+const ProductForm = ({ handleNewProduct }) => {
+    const [error, setError] = useState('');
     const handleProductForm = e => {
         e.preventDefault();
         console.log(e.target);
         const name = e.target.name.value;
         const price = e.target.price.value;
         const quantity = e.target.quantity.value;
+
+        // Validation
+        if (name.length == 0) {
+            setError('Please Provide Product Name');
+            return;
+        }
+        else if (price.length == 0) {
+            setError('Please add a price number');
+            return;
+        }
+        else if (price.length < 0) {
+            setError('Price can not be Negative');
+            return;
+        }
+        else {
+            setError('');
+        }
         // console.log(name, price, quantity);
         const newProduct = {
             name,
             price,
             quantity
         }
-        console.log(newProduct);
+        if (!error) {
+            handleNewProduct(newProduct);
+        }
+
     }
     return (
         <div>
@@ -27,6 +47,7 @@ const ProductForm = () => {
                 <br />
                 <input type="submit" value="submit" />
             </form>
+            <p style={{ color: 'red' }}>{error}</p>
         </div>
     );
 };
