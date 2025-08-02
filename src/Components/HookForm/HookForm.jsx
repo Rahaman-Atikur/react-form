@@ -1,6 +1,5 @@
 import React from 'react';
 import useInputField from '../../Hooks/useInputField';
-
 const HookForm = () => {
     const [name, nameOnChange] = useInputField("");
     const [email, emailOnChange] = useInputField("");
@@ -21,5 +20,4 @@ const HookForm = () => {
         </div>
     );
 };
-
 export default HookForm;

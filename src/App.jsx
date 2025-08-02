@@ -1,6 +1,7 @@
 import ControlledField from "./Components/ControlledField/ControlledField"
 import FormData from "./Components/FormData/FormData"
 import HookForm from "./Components/HookForm/HookForm"
+import ProductManagement from "./Components/ProductManagement/ProductManagement"
 import SimpleForm from "./Components/SimpleReactForm/SimpleForm"
 import UncontrolledField from "./Components/uncontrolledField/uncontrolledField"
 
@@ -15,7 +16,8 @@ function App() {
       {/* <FormData></FormData> */}
       {/* <ControlledField></ControlledField> */}
       {/* <UncontrolledField></UncontrolledField> */}
-      <HookForm></HookForm>
+      {/* <HookForm></HookForm> */}
+      <ProductManagement></ProductManagement>
     </>
   )
 }
