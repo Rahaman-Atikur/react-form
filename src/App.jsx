@@ -12,8 +12,8 @@ function App() {
       <h1>Explore React Form</h1>
       {/* <SimpleForm></SimpleForm> */}
       {/* <FormData></FormData> */}
-      {/* <ControlledField></ControlledField> */}
-      <UncontrolledField></UncontrolledField>
+      <ControlledField></ControlledField>
+      {/* <UncontrolledField></UncontrolledField> */}
     </>
   )
 }
