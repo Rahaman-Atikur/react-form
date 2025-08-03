@@ -5,7 +5,7 @@ import Aunty from './Aunty';
 import './FamilyTree.css'
 
 const Grandpa = () => {
-    const power = '60000 GBP';
+   
     return (
         <div >
             <h2>Grandpa</h2>
