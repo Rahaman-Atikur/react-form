@@ -21,7 +21,8 @@ function App() {
       {/* <HookForm></HookForm> */}
       {/* <ProductManagement></ProductManagement> */}
       {/* <FamilyTree></FamilyTree> */}
-      <Grandpa></Grandpa>
+      {/* <Grandpa></Grandpa> */}
+      <FamilyTree></FamilyTree>
     </>
   )
 }

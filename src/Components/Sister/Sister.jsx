@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
-const Sister = ({power}) => {
+import { AssestsContext } from '../FamilyTree/FamilyTree';
+const Sister = ({power,new}) => {
     const morePower = useContext(AssestsContext);
     console.log('More Power',morePower);
     return (
