@@ -5,12 +5,17 @@ import Aunty from './Aunty';
 import './FamilyTree.css'
 
 const Grandpa = () => {
+    const power = '60000 GBP';
     return (
-        <div className='family-tree flex'>
+        <div >
             <h2>Grandpa</h2>
-            <Dad></Dad>
-            <Uncle></Uncle>
-            <Aunty></Aunty>
+            <div className='family-tree flex'>
+                <Dad power={power}></Dad>
+                <Uncle></Uncle>
+                <Aunty></Aunty>
+            </div>
+
+
         </div>
     );
 };
